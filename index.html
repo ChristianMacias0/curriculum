@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="CV, Curriculum Vitae, Christian Macias, experiencia, educación, habilidades">
+    <meta name="description" content="Curriculum Vitae de Christian Macias. Experiencia profesional, educación y habilidades.">
+    <meta name="author" content="Christian Macias">
+    <title>Curriculum Vitae de Christian Macias</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: 30px auto;
+            box-shadow: 0 0 10px #d0e6d5;
+            display: flex;
+            flex-direction: row;
+        }
+        .cv-sidebar {
+            background: #e6f4ea;
+            color: #2e4d36;
+            width: 32%;
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+        .cv-main {
+            background: #fff;
+            width: 68%;
+            padding: 30px 30px 30px 40px;
+            box-sizing: border-box;
+        }
+        .profile-pic {
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .section-title {
+            background: #b8eac7;
+            color: #22543d;
+            padding: 8px 12px;
+            margin: 30px 0 10px 0;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        .about-me {
+            background: #d4f5df;
+            border-left: 5px solid #8fd19e;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        .info-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .info-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <!-- NUEVO HEADER -->
+    <header>
+        <h1>Christian Macias</h1>
+        <!-- NUEVO NAV -->
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experiencia">Experiencia Laboral</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cv-container">
+        <aside class="cv-sidebar">
+            <img src="<!--  proximamente imagen mia -->" alt="Foto de perfil" class="profile-pic">
+            <!-- SECCIÓN CONTACTO -->
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <ul class="info-list">
+                    <li><span class="info-icon">📧</span> cjavmaci@espol.edu.ec</li>
+                    <li><span class="info-icon">📍</span> Guayaquil, Ecuador</li>
+                </ul>
+            </section>
+            <!-- SECCIÓN EDUCACIÓN -->
+            <section id="educacion">
+                <h2>Educación</h2>
+                <p><strong>Ingeniería en X</strong><br>Universidad A<br>YYYY - YYYY</p>
+            </section>
+            <!-- SECCIÓN EXPERTISE -->
+            <section id="expertise">
+                <h2>Expertise</h2>
+                <ul>
+                    <li>Comunicación</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Liderazgo</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+            </section>
+        </aside>
+        <!-- YA TIENES MAIN, LO MANTENEMOS -->
+        <main class="cv-main">
+            <!-- SECCIÓN SOBRE MÍ -->
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>Profesional con experiencia en...</p>
+            </section>
+            <!-- SECCIÓN EXPERIENCIA LABORAL -->
+            <section id="experiencia">
+                <h2>Experiencia Laboral</h2>
+                <p><strong>Puesto 1</strong> (2022 - Actualidad)<br>
+                Empresa 1<br>
+                Descripción breve de responsabilidades y logros.</p>
+                <p><strong>Puesto 2</strong> (2019 - 2022)<br>
+                Empresa 2<br>
+                Descripción breve de responsabilidades y logros.</p>
+            </section>
+        </main>
+    </div>
+    <!-- NUEVO FOOTER -->
+    <footer>
+        <p>&copy; 2025 Christian Macias</p>
+    </footer>
+</body>
+</html>
