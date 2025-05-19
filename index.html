@@ -6,81 +6,10 @@
     <meta name="description" content="Curriculum Vitae de Christian Macias. Experiencia profesional, educación y habilidades.">
     <meta name="author" content="Christian Macias">
     <title>Curriculum Vitae de Christian Macias</title>
-    <style>
-        body {
-            background: #fff;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .cv-container {
-            max-width: 900px;
-            margin: 30px auto;
-            box-shadow: 0 0 10px #d0e6d5;
-            display: flex;
-            flex-direction: row;
-        }
-        .cv-sidebar {
-            background: #e6f4ea;
-            color: #2e4d36;
-            width: 32%;
-            padding: 30px 20px;
-            box-sizing: border-box;
-        }
-        .cv-main {
-            background: #fff;
-            width: 68%;
-            padding: 30px 30px 30px 40px;
-            box-sizing: border-box;
-        }
-        .profile-pic {
-            width: 100px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px auto;
-        }
-        .section-title {
-            background: #b8eac7;
-            color: #22543d;
-            padding: 8px 12px;
-            margin: 30px 0 10px 0;
-            font-weight: bold;
-            border-radius: 4px;
-            font-size: 1.1em;
-        }
-        .about-me {
-            background: #d4f5df;
-            border-left: 5px solid #8fd19e;
-            padding: 15px 20px;
-            margin-bottom: 25px;
-            border-radius: 4px;
-        }
-        ul {
-            padding-left: 18px;
-        }
-        .info-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 20px 0;
-        }
-        .info-list li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .info-icon {
-            width: 18px;
-            height: 18px;
-            margin-right: 8px;
-            color: #4caf50;
-        }
-    </style>
 </head>
 <body>
-    <!-- NUEVO HEADER -->
     <header>
         <h1>Christian Macias</h1>
-        <!-- NUEVO NAV -->
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -88,56 +17,142 @@
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#experiencia">Experiencia Laboral</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
-    <div class="cv-container">
-        <aside class="cv-sidebar">
-            <img src="<!--  proximamente imagen mia -->" alt="Foto de perfil" class="profile-pic">
-            <!-- SECCIÓN CONTACTO -->
+    <div>
+        <aside>
+            <img src="https://placehold.co/150x250/EEE/31343C <!--  proximamente imagen mia -->" alt="Foto de perfil">
             <section id="contacto">
                 <h2>Contacto</h2>
-                <ul class="info-list">
-                    <li><span class="info-icon">📧</span> cjavmaci@espol.edu.ec</li>
-                    <li><span class="info-icon">📍</span> Guayaquil, Ecuador</li>
+                <ul>
+                    <li>📧 cjavmaci@espol.edu.ec</li>
+                    <li>📍 Guayaquil, Ecuador</li>
                 </ul>
+                <form>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                    <label for="correo">Correo de contacto:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+            
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
-            <!-- SECCIÓN EDUCACIÓN -->
             <section id="educacion">
                 <h2>Educación</h2>
                 <p><strong>Ingeniería en X</strong><br>Universidad A<br>YYYY - YYYY</p>
+                <h3>Ubicación de la universidad:</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.434010240768!2d-79.96728232583936!3d-2.146785197870225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d2e3e6e7c2f%3A0x6e7e2e7c2e7e2e7c!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20(FIEC)%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1716139000000!5m2!1ses-419!2sec" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </section>
-            <!-- SECCIÓN EXPERTISE -->
-            <section id="expertise">
-                <h2>Expertise</h2>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
                 <ul>
                     <li>Comunicación</li>
                     <li>Trabajo en equipo</li>
                     <li>Liderazgo</li>
                     <li>Resolución de problemas</li>
                 </ul>
+                <h3>Idiomas</h3>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <th></th>
+                        <th>Español</th>
+                        <th>Inglés</th>
+                    </tr>
+                    <tr>
+                        <th>Nivel</th>
+                        <td>Nativo</td>
+                        <td>Medio alto</td>
+                    </tr>
+                    <tr>
+                        <th>Uso</th>
+                        <td>Diario</td>
+                        <td>Académico</td>
+                    </tr>
+                </table>
             </section>
         </aside>
-        <!-- YA TIENES MAIN, LO MANTENEMOS -->
-        <main class="cv-main">
-            <!-- SECCIÓN SOBRE MÍ -->
+        <main>
             <section id="sobre-mi">
                 <h2>Sobre mí</h2>
                 <p>Profesional con experiencia en...</p>
+                <!-- Video temporal, recuerda actualizarlo por uno propio -->
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/yBuHEV44s3Y" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+                <p>
+                    GitHub: 
+                    <a href="https://github.com/ChristianMacias0" target="_blank">https://github.com/ChristianMacias0</a>
+                </p>
             </section>
-            <!-- SECCIÓN EXPERIENCIA LABORAL -->
             <section id="experiencia">
                 <h2>Experiencia Laboral</h2>
-                <p><strong>Puesto 1</strong> (2022 - Actualidad)<br>
-                Empresa 1<br>
-                Descripción breve de responsabilidades y logros.</p>
-                <p><strong>Puesto 2</strong> (2019 - 2022)<br>
-                Empresa 2<br>
-                Descripción breve de responsabilidades y logros.</p>
+                <ol>
+                    <li>
+                        <strong>Puesto 1</strong> (2022 - Actualidad)<br>
+                        Empresa 1<br>
+                        Descripción breve de responsabilidades y logros.
+                    </li>
+                    <li>
+                        <strong>Puesto 2</strong> (2019 - 2022)<br>
+                        Empresa 2<br>
+                        Descripción breve de responsabilidades y logros.
+                    </li>
+                </ol>
+            </section>
+            <section id="referencias">
+                <h2>Referencias</h2>
+                <article>
+                    <blockquote>
+                        "frase de la persona en referencia a mi."
+                    </blockquote>
+                    <p>
+                        <span>Nombre 1</span><br>
+                        Cargo asociado<br>
+                        sample text.
+                    </p>
+                </article>
+                <article>
+                    <blockquote>
+                        "frase de la persona en referencia a mi."
+                    </blockquote>
+                    <p>
+                        <span>Nombre 2</span><br>
+                        Cargo asociado<br>
+                        descripcion del trabajo realizado.
+                    </p>
+                </article>
+                <article>
+                    <blockquote>
+                        "frase de la persona en referencia a mi."
+                    </blockquote>
+                    <p>
+                        <span>Nombre 3</span><br>
+                        Cargo asociado<br>
+                        descripcion del trabajo realizado.
+                    </p>
+                </article>
             </section>
         </main>
     </div>
-    <!-- NUEVO FOOTER -->
     <footer>
         <p>&copy; 2025 Christian Macias</p>
     </footer>
