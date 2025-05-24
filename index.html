@@ -5,30 +5,32 @@
     <meta name="keywords" content="CV, Curriculum Vitae, Christian Macias, experiencia, educación, habilidades">
     <meta name="description" content="Curriculum Vitae de Christian Macias. Experiencia profesional, educación y habilidades.">
     <meta name="author" content="Christian Macias">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae de Christian Macias</title>
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Christian Macias</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#experiencia">Experiencia Laboral</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <nav class="sidebar">
+        <button id="toggle-theme" class="icon-btn" aria-label="Cambiar modo día/noche">
+            <span id="theme-icon" class="theme-icon">🌙</span>
+        </button>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#experiencia">Experiencia Laboral</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </ul>
+    </nav>
+    <div class="content">
         <aside>
+
             <img id="photo" src="https://placehold.co/150x250/EEE/31343C <!--  proximamente imagen mia -->" alt="Foto de perfil">
-            <section id="contacto">
-                <h2 class="subtitle">Contacto</h2>
+            <section id="contacto-aside">
+                <h2 class="subtitle">Contáctame</h2>
                 <ul>
                     <li>📧 cjavmaci@espol.edu.ec</li>
                     <li>📍 Guayaquil, Ecuador</li>
@@ -46,11 +48,25 @@
                     <label for="correo">Correo de contacto:</label><br>
                     <input type="email" id="correo" name="correo" required><br><br>
 
-            
                     <button type="submit">Enviar</button>
                 </form>
             </section>
-            <section id="educacion">
+        </aside>
+        <main>
+            <section id="sobre-mi" class="main-section">
+                <h2 class="subtitle">Sobre mí</h2>
+                <p>Profesional con experiencia en...</p>
+                <!-- Video temporal, recuerda actualizarlo por uno propio -->
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/yBuHEV44s3Y" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+                <p>
+                    GitHub: 
+                    <a href="https://github.com/ChristianMacias0" target="_blank">https://github.com/ChristianMacias0</a>
+                </p>
+            </section>
+            <section id="educacion" class="main-section">
                 <h2 class="subtitle">Educación</h2>
                 <p><strong>Ingeniería en X</strong><br>Universidad A<br>YYYY - YYYY</p>
                 <h3>Ubicación de la universidad:</h3>
@@ -64,49 +80,11 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </section>
-            <section id="habilidades">
-                <h2 class="subtitle">Habilidades</h2>
-                <ul>
-                    <li>Comunicación</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Liderazgo</li>
-                    <li>Resolución de problemas</li>
-                </ul>
-                <h3>Idiomas</h3>
-                <table style="border-collapse: collapse;">
-                    <tr>
-                        <th></th>
-                        <th>Español</th>
-                        <th>Inglés</th>
-                    </tr>
-                    <tr>
-                        <th>Nivel</th>
-                        <td>Nativo</td>
-                        <td>Medio alto</td>
-                    </tr>
-                    <tr>
-                        <th>Uso</th>
-                        <td>Diario</td>
-                        <td>Académico</td>
-                    </tr>
-                </table>
+            <section id="expertise" class="main-section">
+                <h2 class="subtitle">Expertise</h2>
+                <p>Aquí puedes detallar tus áreas de especialización, tecnologías dominadas, etc.</p>
             </section>
-        </aside>
-        <main>
-            <section id="sobre-mi">
-                <h2 class="subtitle">Sobre mí</h2>
-                <p>Profesional con experiencia en...</p>
-                <!-- Video temporal, recuerda actualizarlo por uno propio -->
-                <iframe width="300" height="169" src="https://www.youtube.com/embed/yBuHEV44s3Y" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-                <p>
-                    GitHub: 
-                    <a href="https://github.com/ChristianMacias0" target="_blank">https://github.com/ChristianMacias0</a>
-                </p>
-            </section>
-            <section id="experiencia">
+            <section id="experiencia" class="main-section">
                 <h2 class="subtitle">Experiencia Laboral</h2>
                 <ol>
                     <li>
@@ -121,7 +99,7 @@
                     </li>
                 </ol>
             </section>
-            <section id="referencias">
+            <section id="referencias" class="main-section">
                 <h2 class="subtitle">Referencias</h2>
                 <article>
                     <blockquote>
@@ -159,5 +137,8 @@
     <footer>
         <p>&copy; 2025 Christian Macias</p>
     </footer>
+    <script src="./scripts/secciones.js"></script>
+    <script src="./scripts/toggle-theme.js"></script>
+    <script src="./scripts/menu-toggle.js"></script>
 </body>
 </html>
