@@ -85,7 +85,7 @@ body {
     justify-content: center; /* Centra verticalmente las opciones */
     align-items: center;
     width: 100%;
-    gap: 28px; /* Espaciado entre opciones */
+    gap: 1.8rem; /* Espaciado entre opciones */
     margin: 0;
     padding: 0;
 }
@@ -326,3 +326,94 @@ a:focus {
     }
 }
 
+#tabla-idioma {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#tabla-idioma th,
+#tabla-idioma td {
+    border: 1px solid #b7c9e2;
+    padding: 0.7em 1em;
+    text-align: left;
+    background: #263445;
+    color: #eaf1fa;
+}
+
+#tabla-idioma th {
+    background: #31445b;
+    color: #7ecfff;
+    font-weight: 700;
+}
+
+body.day-mode #tabla-idioma th,
+body.day-mode #tabla-idioma td {
+    background: #fff;
+    color: #22334a;
+    border: 1px solid #cedddd;
+}
+
+body.day-mode #tabla-idioma th {
+    background: #eaf1fa;
+    color: #1976d2;
+}
+
+section form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.005rem;
+    width: 100%;
+}
+
+section form label,
+section form input,
+section form textarea,
+section form button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section form button {
+    justify-self: start;
+    width: auto;
+    padding: 0.5em 1.5em;
+    border-radius: 6px;
+    background: #7ecfff;
+    color: #22334a;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+section form button:hover,
+section form button:focus {
+    background: #31445b;
+    color: #7ecfff;
+}
+
+#referencias {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#referencias .subtitle {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+#referencias article {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    #referencias {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    #referencias .subtitle {
+        grid-column: 1 / -1;
+    }
+}
