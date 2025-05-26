@@ -417,3 +417,36 @@ section form button:focus {
         grid-column: 1 / -1;
     }
 }
+
+#tabla-tecnologias {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#tabla-tecnologias th,
+#tabla-tecnologias td {
+    border: 1px solid #b7c9e2;
+    padding: 0.7em 1em;
+    text-align: left;
+    background: #263445;
+    color: #eaf1fa;
+}
+
+#tabla-tecnologias th {
+    background: #31445b;
+    color: #7ecfff;
+    font-weight: 700;
+}
+
+body.day-mode #tabla-tecnologias th,
+body.day-mode #tabla-tecnologias td {
+    background: #fff;
+    color: #22334a;
+    border: 1px solid #cedddd;
+}
+
+body.day-mode #tabla-tecnologias th {
+    background: #eaf1fa;
+    color: #1976d2;
+}
