@@ -21,50 +21,32 @@
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#expertise">Habilidades</a></li>
-            <li><a href="#experiencia">Experiencia Laboral</a></li>
             <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#contactame">Contáctame</a></li>
         </ul>
     </nav>
     <div class="content">
-        <aside>
-
-            <img id="photo" src="https://placehold.co/150x250/EEE/31343C <!--  proximamente imagen mia -->" alt="Foto de perfil">
-            <section id="contacto-aside">
-                <h2 class="subtitle">Contáctame</h2>
-                <ul>
-                    <li>📧 cjavmaci@espol.edu.ec</li>
-                    <li>📍 Guayaquil, Ecuador</li>
-                </ul>
-                <form>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-
-                    <label for="asunto">Asunto:</label><br>
-                    <input type="text" id="asunto" name="asunto" required><br><br>
-
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-
-                    <label for="correo">Correo de contacto:</label><br>
-                    <input type="email" id="correo" name="correo" required><br><br>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </aside>
         <main>
             <section id="sobre-mi" class="main-section">
-                <h2 class="subtitle">Sobre mí</h2>
-                <p>Profesional con experiencia en...</p>
-                <!-- Video temporal, recuerda actualizarlo por uno propio -->
-                <iframe width="300" height="169" src="https://www.youtube.com/embed/yBuHEV44s3Y" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-                <p>
-                    GitHub: 
-                    <a href="https://github.com/ChristianMacias0" target="_blank">https://github.com/ChristianMacias0</a>
-                </p>
+                <div class="sobre-mi-grid">
+                    <img id="photo" src="resources/foto.png" alt="Foto de perfil">
+                    <div class="sobre-mi-info">
+                        <h2 class="subtitle">Sobre mí</h2>
+                        <p>Soy Christian Javier Macias Mendoza, estudiante de la carrera de Ingeniería en Ciencias de la Computación en la ESPOL.
+                             Me considero una persona muy proactiva, siempre intento dar un poco más de mí mismo y asegurarme de que todo quede bien
+                              hecho. Me gusta dedicarme al trabajo con todas mis fuerzas y aprender cosas nuevas cada día. Además, disfruto colaborar 
+                              en equipo y aportar ideas para lograr los mejores resultados posibles.
+                        </p>
+                        <iframe width="300" height="169" src="https://youtu.be/v6kEanzJhpg?si=WIazjmWNBIJyqN7_" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <p>
+                            GitHub: 
+                            <a href="https://github.com/ChristianMacias0" target="_blank">https://github.com/ChristianMacias0</a>
+                        </p>
+                    </div>
+                </div>
             </section>
             <section id="educacion" class="main-section">
                 <h2 class="subtitle">Educación</h2>
@@ -139,53 +121,62 @@
                     </tbody>
                 </table>
             </section>
-            <section id="experiencia" class="main-section">
-                <h2 class="subtitle">Experiencia Laboral</h2>
-                <ol>
-                    <li>
-                        <strong>Puesto 1</strong> (2022 - Actualidad)<br>
-                        Empresa 1<br>
-                        Descripción breve de responsabilidades y logros.
-                    </li>
-                    <li>
-                        <strong>Puesto 2</strong> (2019 - 2022)<br>
-                        Empresa 2<br>
-                        Descripción breve de responsabilidades y logros.
-                    </li>
-                </ol>
-            </section>
             <section id="referencias" class="main-section">
                 <h2 class="subtitle">Referencias</h2>
-                <article>
-                    <blockquote>
-                        "frase de la persona en referencia a mi."
-                    </blockquote>
-                    <p>
-                        <span>Nombre 1</span><br>
-                        Cargo asociado<br>
-                        sample text.
-                    </p>
-                </article>
-                <article>
-                    <blockquote>
-                        "frase de la persona en referencia a mi."
-                    </blockquote>
-                    <p>
-                        <span>Nombre 2</span><br>
-                        Cargo asociado<br>
-                        descripcion del trabajo realizado.
-                    </p>
-                </article>
-                <article>
-                    <blockquote>
-                        "frase de la persona en referencia a mi."
-                    </blockquote>
-                    <p>
-                        <span>Nombre 3</span><br>
-                        Cargo asociado<br>
-                        descripcion del trabajo realizado.
-                    </p>
-                </article>
+                <div class="referencias-grid">
+                    <article>
+                        <blockquote>
+                            "Trabaja muy duro y le invierte mas tiempo al trabajo en caso de ser necesario."
+                        </blockquote>
+                        <p>
+                            <span>Paulo Tapia</span><br>
+                            Compañero de proyecto<br>
+                            En este proyecto se estaban realizando multiples tecnicas de refactorizacion en una simulacion de un sistema de venta de tickets de evento.
+                        </p>
+                    </article>
+                    <article>
+                        <blockquote>
+                            "Siempre muestra iniciativa y no duda en asumir responsabilidades adicionales cuando el equipo lo necesita."
+                        </blockquote>
+                        <p>
+                            <span>Francis Loayza</span><br>
+                            Compañero de trabajo<br>
+                            Colaboramos juntos en el desarrollo de una aplicación que simulaba un sistema de envios de correos automatizados realizando las conexiones necesarias con google para el envio de los correos.
+                        </p>
+                    </article>
+                    <article>
+                        <blockquote>
+                            "Destaca por su actitud positiva y su capacidad para resolver problemas de manera creativa."
+                        </blockquote>
+                        <p>
+                            <span>Victor Villacreces</span><br>
+                            Compañero de trabajo<br>
+                            Trabajamos juntos para un proyecto de analisis estadistico de datos, donde se utilizaba un modelo de regresion lineal para explicar el comportamiento de un evento.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="contactame" class="main-section">
+                <h2 class="subtitle">Contáctame</h2>
+                <ul>
+                    <li>📧 cjavmaci@espol.edu.ec</li>
+                    <li>📍 Guayaquil, Ecuador</li>
+                </ul>
+                <form>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                    <label for="correo">Correo de contacto:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </main>
     </div>
